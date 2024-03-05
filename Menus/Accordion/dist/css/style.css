@@ -1,0 +1,102 @@
+/* -------------------------------- CSS RESET ------------------------------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+/* ---------------------- ROOT, BODY & HEADING ELEMENT ---------------------- */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  display: grid;
+  justify-content: center;
+  padding-top: 5rem;
+  height: 100vh;
+  background: linear-gradient(270deg, #ecfdf5, #fffbeb);
+  background-size: 500% 500%;
+  animation: bg 3s infinite;
+}
+body main {
+  width: 50vw;
+}
+
+@keyframes bg {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 0%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: serif;
+}
+
+/* ---------------------------- ACCORDION BUTTON ---------------------------- */
+.accordion {
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  background: linear-gradient(270deg, #fef9c3, #ffe4e6);
+  color: #000;
+  padding: 1.6rem;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.accordion:after {
+  content: "+";
+  font-size: 1.4rem;
+  float: right;
+}
+
+.active:after {
+  content: "-";
+}
+
+.active,
+.accordion:hover {
+  background: linear-gradient(270deg, #fbbf24, #f87171);
+}
+
+#first {
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+#last {
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+
+/* ---------------------------------- PANEL --------------------------------- */
+.panel {
+  padding: 1.6rem;
+  color: black;
+  display: none;
+  border-left: 1px solid #ffe4e6;
+  border-right: 1px solid yellow;
+  border-bottom: 1px solid #ffe4e6;
+  background-color: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(16px) saturate(180%);
+  max-height: 0;
+  transition: all 0.2s ease-out;
+  overflow: hidden;
+  text-align: justify;
+  font-size: 1.4rem;
+}
+
+/*# sourceMappingURL=style.css.map */
