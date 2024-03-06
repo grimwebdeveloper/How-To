@@ -1,0 +1,47 @@
+/* -------------------------------- CSS RESET ------------------------------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+/* ----------------------- ROOT, BODY, HEADING ELEMENT ---------------------- */
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: sans-serif;
+}
+/* ---------------------------------- LAYOUT --------------------------------- */
+main {
+  display: grid;
+  justify-content: center;
+  padding-top: 5rem;
+}
+/* ---------------------------------- TABLE --------------------------------- */
+table {
+  border: 1px solid black;
+  width: 70rem;
+  text-align: left;
+  border-collapse: collapse;
+  margin: 0rem 1rem;
+}
+thead{
+    background-color: dodgerblue;
+    color: white;
+}
+th, td{
+    padding: 1rem;
+}
+tbody tr:nth-child(even) {
+background-color: lightgrey;
+}
