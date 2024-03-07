@@ -1,0 +1,76 @@
+/* -------------------------------- CSS RESET ------------------------------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: serif;
+}
+
+/* ---------------------- ROOT, BODY & HEADING ELEMENT ---------------------- */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.8;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: sans-serif;
+}
+
+/* --------------------------------- LAYOUT --------------------------------- */
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10rem;
+}
+
+/* ---------------------------- BUTTON CONTAINER ---------------------------- */
+.btn-container {
+  height: fit-content;
+  padding: 1rem 0;
+  padding-left: 1rem;
+}
+
+.container-btn {
+  font-size: 1.6rem;
+  border: none;
+  padding: 1rem 2rem;
+  background-color: dodgerblue;
+  color: white;
+  cursor: pointer;
+  border-radius: 1rem;
+}
+.container-btn i {
+  margin-right: 1rem;
+}
+
+.grid-container {
+  display: grid;
+  gap: 0.5rem;
+  padding: 1rem;
+}
+.grid-container .grid-items {
+  background-color: dodgerblue;
+  color: white;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.grid {
+  grid-template-columns: 1fr 1fr;
+}
+
+.list {
+  grid-template-columns: 1fr;
+}
+
+/*# sourceMappingURL=style.css.map */
