@@ -1,0 +1,47 @@
+/* -------------------------------- CSS RESET ------------------------------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+/* ---------------------- ROOT, BODY & HEADING ELEMENT ---------------------- */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+  font-family: serif;
+}
+
+/* --------------------------------- LAYOUT --------------------------------- */
+main {
+  padding: 1rem;
+  background-color: lightcyan;
+}
+
+/* -------------------------------- MORE SPAN ------------------------------- */
+#more {
+  display: none;
+}
+
+/* --------------------------------- BUTTON --------------------------------- */
+.btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: dodgerblue;
+  color: white;
+  cursor: pointer;
+  margin-top: 3rem;
+  border-radius: 0.5rem;
+}
+
+/*# sourceMappingURL=style.css.map */
