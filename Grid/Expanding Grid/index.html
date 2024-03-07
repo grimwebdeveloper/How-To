@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="src/assets/img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="dist/css/style.css">
+    <title>Expanding Grid</title>
+</head>
+
+<body>
+    <main>
+        <!-- --------------------- GRID ROW WITH THREE COLUMNS --------------------- -->
+        <div class="row">
+            <div class="column one" onclick="openTab('box1')">1</div>
+            <div class="column two" onclick="openTab('box2')">2</div>
+            <div class="column three" onclick="openTab('box3')">3</div>
+        </div>
+        <!-- --------------------------- GRID CONTAINER ---------------------------- -->
+        <div id="box1" class="content one">
+            <span class="close" onclick="this.parentElement.style.display = 'none';">X</span>
+            <h1>Box 1</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis, illum?</p>
+        </div>
+        <div id="box2" class="content two">
+            <span class="close" onclick="this.parentElement.style.display = 'none';">X</span>
+            <h1>Box 2</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis, illum?</p>
+        </div>
+        <div id="box3" class="content three">
+            <span class="close" onclick="this.parentElement.style.display = 'none';">X</span>
+            <h1>Box 3</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis, illum?</p>
+        </div>
+    </main>
+    <!-- ----------------------------- JAVASCRIPT ------------------------------ -->
+    <script src="dist/js/script.js"></script>
+</body>
+
+</html>

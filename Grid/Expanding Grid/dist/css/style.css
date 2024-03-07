@@ -1,0 +1,71 @@
+/* -------------------------------- CSS RESET ------------------------------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+/* ---------------------- ROOT, BODY & HEADING ELEMENT ---------------------- */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.8;
+}
+
+h1,
+h2,
+h3 {
+  font-family: serif;
+}
+
+/* ------------------------------ GLOBAL STYLE ------------------------------ */
+.one {
+  background-color: skyblue;
+}
+
+.two {
+  background-color: gold;
+}
+
+.three {
+  background-color: chartreuse;
+}
+
+/* --------------------------------- LAYOUT --------------------------------- */
+main {
+  padding: 1rem;
+}
+
+/* -------------------------------- GRID ROW -------------------------------- */
+.row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+.row .column {
+  text-align: center;
+  padding: 5rem;
+  font-size: 3.2rem;
+  cursor: pointer;
+}
+
+/* ----------------------------- GRID CONTAINER ----------------------------- */
+.content {
+  padding: 1rem;
+  margin-top: 1rem;
+  display: none;
+  transition: 3s ease-in;
+}
+
+.close {
+  float: right;
+  font-weight: bolder;
+  color: red;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=style.css.map */
